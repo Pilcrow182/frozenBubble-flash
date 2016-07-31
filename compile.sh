@@ -1,3 +1,5 @@
+#!/bin/bash
+
  #
  #                 [[ Frozen-Bubble ]]
  #
@@ -46,7 +48,10 @@
  
 set -e
 echo "build game.xml"
-./game.rb
+OUTPUT='<?xml version="1.0" encoding="iso-8859-1" ?>\n<movie width="640" height="480" framerate="40">\n\t<background color="#ffffff"/>\n\t<frame>\n\t\t<library>'
+while read FILE; do echo "${FILE}"; NAME=${FILE##*/}; OUTPUT="${OUTPUT}\n\t\t\t<clip id=\"${NAME%.*}\" import=\"${FILE}\"/>"; done <<< "$(find ./snd -type f; find ./gfx -type f)"
+OUTPUT="${OUTPUT}\n\t\t</library>\n\t</frame>\n</movie>"
+echo -e "$OUTPUT" > game.xml
 
 echo "compilation..."
 echo "..swfmill"
