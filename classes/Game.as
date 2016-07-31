@@ -78,7 +78,15 @@ class Game
 		this._main = main;
 		level = nLevel - 1;
 		reset = getLevel(level) == "COMPLETE";
-		life = 4;
+
+		var so:SharedObject = SharedObject.getLocal("savedata");
+		life = so.data.life;
+		if (!so.data.life) {
+			life = 4;
+			so.data.life = life;
+			so.flush();
+			so.close();
+		}
 	}
 	
 	public function startGame():Void
@@ -124,9 +132,16 @@ class Game
 			if (!bWin)
 			{
 				level = 0;
+				life = 4;
 			}
 			this._main.setState("gameOver", [bWin, level]);
 		}
+
+		var so:SharedObject = SharedObject.getLocal("savedata");
+		so.data.level = level + 1;
+		so.data.life = life;
+		so.flush();
+		so.close();
 	}
 	
 	public function first_level():String

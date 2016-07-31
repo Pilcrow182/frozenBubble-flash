@@ -48,14 +48,24 @@
 class Main
 {
 	private var gameDepth:Number = 100;
-	private var level:Number = 1;
+	private var level:Number;
 	private var game:Game;
 	
-	public var MAX_LEVEL:Number = 7;
+	public var MAX_LEVEL:Number = 100;
 
 	public function Main(root:MovieClip)
 	{
 		var mcGame:MovieClip = root.createEmptyMovieClip("gameLevel", gameDepth);
+
+		var so:SharedObject = SharedObject.getLocal("savedata");
+		level = so.data.level;
+		if (!so.data.level) {
+			level = 1;
+			so.data.level = level;
+			so.flush();
+			so.close();
+		}
+
 		game = new Game(this, mcGame, level);
 		game.startGame();
 	}
