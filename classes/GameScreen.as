@@ -111,8 +111,15 @@ class GameScreen
 	private var lifeIndex:Array;
 
 	private var timer:Number;
-	
-	
+
+	private var text_0:Sprite;
+	private var text_1:Sprite;
+	private var text_2:Sprite;
+	private var text_3:Sprite;
+	private var text_4:Sprite;
+	private var text_5:Sprite;
+	private var text_6:Sprite;
+	private var text_7:Sprite;
 
 	// Colorblind
 	private var cb:String;
@@ -184,6 +191,17 @@ class GameScreen
 		// Set background
 		currentGame.setBackground('back_one_player');
 
+		// display level
+		var levelDisplay = "" + (levelIndex + 1)
+		text_0 = new Sprite( 38 - (6 * levelDisplay.length), 100, 'text_l',                         -2, currentGame.mcStaticsBubbles);
+		text_1 = new Sprite( 51 - (6 * levelDisplay.length), 100, 'text_e',                         -2, currentGame.mcStaticsBubbles);
+		text_2 = new Sprite( 65 - (6 * levelDisplay.length), 100, 'text_v',                         -2, currentGame.mcStaticsBubbles);
+		text_3 = new Sprite( 79 - (6 * levelDisplay.length), 100, 'text_e',                         -2, currentGame.mcStaticsBubbles);
+		text_4 = new Sprite( 93 - (6 * levelDisplay.length), 100, 'text_l',                         -2, currentGame.mcStaticsBubbles);
+		text_5 = new Sprite(115 - (6 * levelDisplay.length), 100, 'text_' + levelDisplay.charAt(0), -2, currentGame.mcStaticsBubbles);
+		text_6 = new Sprite(127 - (6 * levelDisplay.length), 100, 'text_' + levelDisplay.charAt(1), -2, currentGame.mcStaticsBubbles);
+		text_7 = new Sprite(139 - (6 * levelDisplay.length), 100, 'text_' + levelDisplay.charAt(2), -2, currentGame.mcStaticsBubbles);
+
 		// Init penguin
 		penguin = new Sprite(404, 420, 'anim20', 1, currentGame.mcPlayer);
 		penguinIndex = 20;
@@ -218,7 +236,6 @@ class GameScreen
 			nextLevel = currentGame.getLevel(levelIndex + 1);
 		}
 
-		
 		var chaine:String = "";
 		for (var i = 0; i < 8; i++) {
 			bubbles[i] = new Array();

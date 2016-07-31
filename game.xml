@@ -24,39 +24,65 @@
 		<clip id="win_panel_1player-347" import="./gfx/win_panel_1player-347.png"/>
 		<clip id="win_panel_1player-348" import="./gfx/win_panel_1player-348.png"/>
 		<clip id="win_panel_1player-349" import="./gfx/win_panel_1player-349.png"/>
+		<clip id="text_a" import="./gfx/text_a.png"/>
 		<clip id="win_panel_1player-350" import="./gfx/win_panel_1player-350.png"/>
+		<clip id="text_b" import="./gfx/text_b.png"/>
 		<clip id="win_panel_1player-351" import="./gfx/win_panel_1player-351.png"/>
+		<clip id="text_c" import="./gfx/text_c.png"/>
 		<clip id="win_panel_1player-352" import="./gfx/win_panel_1player-352.png"/>
+		<clip id="text_d" import="./gfx/text_d.png"/>
 		<clip id="win_panel_1player-353" import="./gfx/win_panel_1player-353.png"/>
+		<clip id="text_e" import="./gfx/text_e.png"/>
 		<clip id="win_panel_1player-354" import="./gfx/win_panel_1player-354.png"/>
+		<clip id="text_f" import="./gfx/text_f.png"/>
 		<clip id="win_panel_1player-355" import="./gfx/win_panel_1player-355.png"/>
+		<clip id="text_g" import="./gfx/text_g.png"/>
 		<clip id="win_panel_1player-356" import="./gfx/win_panel_1player-356.png"/>
+		<clip id="text_h" import="./gfx/text_h.png"/>
 		<clip id="win_panel_1player-357" import="./gfx/win_panel_1player-357.png"/>
+		<clip id="text_i" import="./gfx/text_i.png"/>
 		<clip id="win_panel_1player-358" import="./gfx/win_panel_1player-358.png"/>
+		<clip id="text_j" import="./gfx/text_j.png"/>
 		<clip id="win_panel_1player-359" import="./gfx/win_panel_1player-359.png"/>
+		<clip id="text_k" import="./gfx/text_k.png"/>
+		<clip id="text_l" import="./gfx/text_l.png"/>
 		<clip id="win_panel_1player-360" import="./gfx/win_panel_1player-360.png"/>
+		<clip id="text_m" import="./gfx/text_m.png"/>
 		<clip id="loose1" import="./gfx/loose1.png"/>
 		<clip id="win_panel_1player-361" import="./gfx/win_panel_1player-361.png"/>
+		<clip id="text_n" import="./gfx/text_n.png"/>
 		<clip id="loose2" import="./gfx/loose2.png"/>
 		<clip id="win_panel_1player-362" import="./gfx/win_panel_1player-362.png"/>
+		<clip id="text_o" import="./gfx/text_o.png"/>
 		<clip id="loose3" import="./gfx/loose3.png"/>
 		<clip id="win_panel_1player-363" import="./gfx/win_panel_1player-363.png"/>
+		<clip id="text_p" import="./gfx/text_p.png"/>
 		<clip id="loose4" import="./gfx/loose4.png"/>
 		<clip id="win_panel_1player-364" import="./gfx/win_panel_1player-364.png"/>
+		<clip id="text_q" import="./gfx/text_q.png"/>
 		<clip id="loose5" import="./gfx/loose5.png"/>
 		<clip id="win_panel_1player-365" import="./gfx/win_panel_1player-365.png"/>
+		<clip id="text_r" import="./gfx/text_r.png"/>
 		<clip id="compressor_ext" import="./gfx/compressor_ext.png"/>
 		<clip id="loose6" import="./gfx/loose6.png"/>
 		<clip id="win_panel_1player-366" import="./gfx/win_panel_1player-366.png"/>
+		<clip id="text_s" import="./gfx/text_s.png"/>
 		<clip id="loose7" import="./gfx/loose7.png"/>
 		<clip id="win_panel_1player-367" import="./gfx/win_panel_1player-367.png"/>
+		<clip id="text_t" import="./gfx/text_t.png"/>
 		<clip id="loose8" import="./gfx/loose8.png"/>
 		<clip id="win_panel_1player-368" import="./gfx/win_panel_1player-368.png"/>
+		<clip id="text_u" import="./gfx/text_u.png"/>
 		<clip id="loose9" import="./gfx/loose9.png"/>
 		<clip id="win_panel_1player-369" import="./gfx/win_panel_1player-369.png"/>
+		<clip id="text_v" import="./gfx/text_v.png"/>
+		<clip id="text_w" import="./gfx/text_w.png"/>
 		<clip id="win_panel_1player-370" import="./gfx/win_panel_1player-370.png"/>
+		<clip id="text_x" import="./gfx/text_x.png"/>
 		<clip id="win_panel_1player-371" import="./gfx/win_panel_1player-371.png"/>
+		<clip id="text_y" import="./gfx/text_y.png"/>
 		<clip id="win_panel_1player-372" import="./gfx/win_panel_1player-372.png"/>
+		<clip id="text_z" import="./gfx/text_z.png"/>
 		<clip id="win_panel_1player-373" import="./gfx/win_panel_1player-373.png"/>
 		<clip id="win_panel_1player-374" import="./gfx/win_panel_1player-374.png"/>
 		<clip id="win_panel_1player-375" import="./gfx/win_panel_1player-375.png"/>
@@ -1045,14 +1071,24 @@
 		<clip id="win_panel_1player-303" import="./gfx/win_panel_1player-303.png"/>
 		<clip id="win_panel_1player-304" import="./gfx/win_panel_1player-304.png"/>
 		<clip id="win_panel_1player-305" import="./gfx/win_panel_1player-305.png"/>
+		<clip id="text_0" import="./gfx/text_0.png"/>
 		<clip id="win_panel_1player-306" import="./gfx/win_panel_1player-306.png"/>
+		<clip id="text_1" import="./gfx/text_1.png"/>
 		<clip id="win_panel_1player-307" import="./gfx/win_panel_1player-307.png"/>
+		<clip id="text_2" import="./gfx/text_2.png"/>
 		<clip id="win_panel_1player-308" import="./gfx/win_panel_1player-308.png"/>
+		<clip id="text_3" import="./gfx/text_3.png"/>
 		<clip id="win_panel_1player-309" import="./gfx/win_panel_1player-309.png"/>
+		<clip id="text_4" import="./gfx/text_4.png"/>
+		<clip id="text_5" import="./gfx/text_5.png"/>
 		<clip id="win_panel_1player-310" import="./gfx/win_panel_1player-310.png"/>
+		<clip id="text_6" import="./gfx/text_6.png"/>
 		<clip id="win_panel_1player-311" import="./gfx/win_panel_1player-311.png"/>
+		<clip id="text_7" import="./gfx/text_7.png"/>
 		<clip id="win_panel_1player-312" import="./gfx/win_panel_1player-312.png"/>
+		<clip id="text_8" import="./gfx/text_8.png"/>
 		<clip id="win_panel_1player-313" import="./gfx/win_panel_1player-313.png"/>
+		<clip id="text_9" import="./gfx/text_9.png"/>
 		<clip id="win_panel_1player-314" import="./gfx/win_panel_1player-314.png"/>
 		<clip id="win_panel_1player-315" import="./gfx/win_panel_1player-315.png"/>
 		<clip id="win_panel_1player-316" import="./gfx/win_panel_1player-316.png"/>
