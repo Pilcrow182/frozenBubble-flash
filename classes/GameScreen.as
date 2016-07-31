@@ -394,6 +394,21 @@ class GameScreen
 				waitDir = 1;
 			break;
 			case Key.SHIFT:
+				launchIndex = 30;
+				launcher.setSrc('launcher' + 30);
+
+				if (penguinIndex < 50) {
+					penguinIndex = 50;
+					penguin.setSrc('anim50');
+				}
+				else if (penguinIndex < 71) {
+					penguinIndex++;
+					penguin.setSrc('anim' + penguinIndex);
+				}
+
+				waitCount = 0;
+				waitDir = 1;
+			break;
 			case Key.UP:
 				if (!fired) {
 					fired = true;
