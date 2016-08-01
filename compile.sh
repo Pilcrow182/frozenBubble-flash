@@ -49,7 +49,8 @@
 set -e
 echo "build game.xml"
 OUTPUT='<?xml version="1.0" encoding="iso-8859-1" ?>\n<movie width="640" height="480" framerate="40">\n\t<background color="#ffffff"/>\n\t<frame>\n\t\t<library>'
-while read FILE; do echo "${FILE}"; NAME=${FILE##*/}; OUTPUT="${OUTPUT}\n\t\t\t<clip id=\"${NAME%.*}\" import=\"${FILE}\"/>"; done <<< "$(find ./snd -type f; find ./gfx -type f)"
+while read FILE; do echo "${FILE}"; NAME=${FILE##*/}; OUTPUT="${OUTPUT}\n\t\t\t<clip id=\"${NAME%.*}\" import=\"${FILE}\"/>"; done <<< "$(find ./snd -maxdepth 1 -type f | sort)"
+while read FILE; do echo "${FILE}"; NAME=${FILE##*/}; OUTPUT="${OUTPUT}\n\t\t\t<clip id=\"${NAME%.*}\" import=\"${FILE}\"/>"; done <<< "$(find ./gfx -maxdepth 1 -type f | sort)"
 OUTPUT="${OUTPUT}\n\t\t</library>\n\t</frame>\n</movie>"
 echo -e "$OUTPUT" > game.xml
 
